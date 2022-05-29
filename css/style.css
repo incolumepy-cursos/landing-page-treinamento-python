@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+:root{
+  --cor00: #7C6FFF;
+  --cor01:rgba(124, 111, 255, .5);
+  --cor02:rgba(124, 111, 255, .2);
+  --cor10: #5CA9FF;
+  --cor11: rgba(92, 169, 255, .5);
+  --cor12: rgba(92, 169, 255, .2);
+  --cor20: #FCFF90;
+  --cor21: rgba(252, 255, 144, .5);
+  --cor22: rgba(252, 255, 144, .2);
+  --cor30: #FFDE68;
+  --cor31: rgba(255, 222, 104, .5);
+  --cor32: rgba(255, 222, 104, .2);
+  --cor40: blue;
+  --cor41: rgba(0, 0, 255, .5);
+  --cor42: rgba(0, 0, 255, .2);
+  --vertice: rgba(0, 0, 255, .45);
+
+
+}
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: linear-gradient(var(--cor11) 20%, var(--cor01) 80%), url(/img/hero_python_0.svg);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
+}
+header{
+  height: 10vh;
+  background-color: var(--vertice);
+  display: flex;
+}
+header aside img{
+  width: 102px;
+}
+header section nav ul{
+  display: flex;
+  list-style: none;
+}
+main {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 10vw;
+}
+
+main aside img{
+  width: 500px;
+  /*filter: invert(100%) sepia(94%) saturate(24%) hue-rotate(66deg) brightness(107%) contrast(106%);*/
+}
+main section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  padding-left: 10vw;
+}
+main section h1{
+  padding-bottom: 2rem;
+}
+main section ul{
+  display: flex;
+  list-style: none;
+
+}
+main section ul li{
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+main section ul li img{
+  width: 42px;
+}
+
+footer{
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: var(--vertice);
+}
+footer section{
+  color: white;
+  text-align: center;
+}
+footer article svg {
+  display: none;
+  fill: var(--cor00);
+}
