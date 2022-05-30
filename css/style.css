@@ -20,7 +20,9 @@
   --cor40: blue;
   --cor41: rgba(0, 0, 255, .5);
   --cor42: rgba(0, 0, 255, .2);
-  --vertice: rgba(0, 0, 255, .45);
+  --vertice: rgba(0, 0, 0, .45);
+  --degrade0: rgba(0, 0, 0, .3);
+  --degrade1: rgba(150, 150, 150, .3);
 
 
 }
@@ -30,7 +32,7 @@ html {
 }
 
 body {
-  background: linear-gradient(var(--cor11) 20%, var(--cor01) 80%), url(/img/hero_python_0.svg);
+  background: linear-gradient(var(--degrade1) 20%, var(--degrade0) 80%), url(/img/hero_python_0.svg);
   background-position: center center;
   background-size: cover;
   background-position-y: 0px;
