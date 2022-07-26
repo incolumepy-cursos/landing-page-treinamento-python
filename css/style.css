@@ -89,20 +89,33 @@ main section h1{
   font-family: 'Fjalla One', sans-serif;
   font-weight: 900;
   font-size: 6rem;
+  color: orange;
 }
 main section h2{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   padding-bottom: 7rem;
 }
-
+main section h2 span{
+  color: orange;
+}
 main section ul{
+  width: 30vw;
   display: flex;
+  justify-content: space-between;
   list-style: none;
-  border: 1px;
+  padding: 25px 30px;
+  border: 2px solid orange;
+  border-radius: 8px;
+}
+main section ul:hover{
+  background-color: white;
+  border: 2px solid orange;
+  background-color: orange;
 }
 main section ul li{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   align-content: space-around;
   flex-wrap: wrap;
@@ -112,18 +125,26 @@ main section ul li img{
   width: 42px;
   filter: invert(100%) sepia(94%) saturate(24%) hue-rotate(66deg) brightness(107%) contrast(106%);
 }
-
+main section ul li img:hover{
+  width: 60px;
+  filter: invert(100%) sepia(25%) saturate(6367%) hue-rotate(313deg) brightness(111%) contrast(101%);
+  transition: 100ms;
+  transition-duration: .8s;
+}
 footer{
   height: 5vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  justify-content: center;
   background-color: var(--vertice);
 }
 footer section{
   font-family: 'Montserrat', sans-serif;
   font-size: 100;
-  color: white;
+  color: orange;
   display: flex;
   align-items: center;
   align-content: center;
