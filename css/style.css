@@ -1,4 +1,4 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:ital,wght@0,100;0,900;1,400;1,900&display=swap');* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,7 +20,9 @@
   --cor40: blue;
   --cor41: rgba(0, 0, 255, .5);
   --cor42: rgba(0, 0, 255, .2);
-  --vertice: rgba(0, 0, 255, .45);
+  --vertice: rgba(0, 0, 0, .45);
+  --degrade0: rgba(120, 120, 120, 1);
+  --degrade1: rgba(17, 17, 17, .8);
 
 
 }
@@ -30,19 +32,30 @@ html {
 }
 
 body {
-  background: linear-gradient(var(--cor11) 20%, var(--cor01) 80%), url(/img/hero_python_0.svg);
+  background: linear-gradient(var(--degrade0) 20%, var(--degrade1) 80%), url(/img/hero_python_0.svg);
   background-position: center center;
   background-size: cover;
   background-position-y: 0px;
   background-repeat: no-repeat;
 }
 header{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
   height: 10vh;
   background-color: var(--vertice);
   display: flex;
+  padding: 0 auto;
+}
+header a{
+  color: white;
+  text-decoration: none;
 }
 header aside img{
   width: 102px;
+}
+header section{
+  font-size: 4rem;
+  color: white;
 }
 header section nav ul{
   display: flex;
@@ -57,7 +70,10 @@ main {
 
 main aside img{
   width: 500px;
-  /*filter: invert(100%) sepia(94%) saturate(24%) hue-rotate(66deg) brightness(107%) contrast(106%);*/
+}
+main aside svg{
+  width: 500px;
+  fill: orange;
 }
 main section{
   display: flex;
@@ -66,16 +82,40 @@ main section{
   align-content: center;
   padding-left: 10vw;
 }
+main section h1, main section h2{
+  color: white;
+}
 main section h1{
-  padding-bottom: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  color: orange;
+}
+main section h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  padding-bottom: 7rem;
+}
+main section h2 span{
+  color: orange;
 }
 main section ul{
+  width: 30vw;
   display: flex;
+  justify-content: space-between;
   list-style: none;
-
+  padding: 25px 30px;
+  border: 2px solid orange;
+  border-radius: 8px;
+}
+main section ul:hover{
+  background-color: white;
+  border: 2px solid orange;
+  background-color: orange;
 }
 main section ul li{
   display: flex;
+  justify-content: space-between;
   align-items: center;
   align-content: space-around;
   flex-wrap: wrap;
@@ -83,17 +123,31 @@ main section ul li{
 }
 main section ul li img{
   width: 42px;
+  filter: invert(100%) sepia(94%) saturate(24%) hue-rotate(66deg) brightness(107%) contrast(106%);
 }
-
+main section ul li img:hover{
+  width: 60px;
+  filter: invert(100%) sepia(25%) saturate(6367%) hue-rotate(313deg) brightness(111%) contrast(101%);
+  transition: 100ms;
+  transition-duration: .8s;
+}
 footer{
   height: 5vh;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   align-content: center;
+  justify-content: center;
   background-color: var(--vertice);
 }
 footer section{
-  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100;
+  color: orange;
+  display: flex;
+  align-items: center;
+  align-content: center;
   text-align: center;
 }
 footer article svg {
